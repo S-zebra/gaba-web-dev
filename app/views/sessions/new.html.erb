@@ -1,0 +1,26 @@
+<% @title = "ログイン" %>
+<%= render "common/header" %>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="h2-responsive">
+      ログイン
+    </h2>
+
+    <%= form_tag "/sessions" %>
+      <div class="form-item mt-2 mb-2">
+        <div class="col-md-3 d-inline-block">ユーザーID: </div>
+        <div class="col-md-9 d-inline-block"><%= text_field_tag :user_id %></div>
+      </div>
+
+      <div class="form-item mt-2 mb-2">
+        <div class="col-md-3 d-inline-block">パスワード: </div>
+        <div class="col-md-9 d-inline-block"><%= password_field_tag :password %></div>
+      </div>
+
+      <div class="form-item mt-2 text-right">
+        <%= submit_tag "ログイン" %>
+      </div>
+    <% #end %>
+  </div>
+</div>

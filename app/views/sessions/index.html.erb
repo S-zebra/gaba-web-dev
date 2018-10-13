@@ -1,0 +1,15 @@
+<% @title = "トップ" %>
+<%= render "common/header" %>
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="h2-responsive">
+      サインインが必要です
+    </h2>
+    <p>
+      <div>このサービスをご利用いただくには、アカウントが必要です。</div>
+      <div>まずは、<%=link_to "こちら", new_account_path %>から登録をお願いいたします。</div>
+      <div>そのあとは、<%=link_to "ここからログイン", new_session_path %>してください。</div>
+    </p>
+  </div>
+  
+</div>

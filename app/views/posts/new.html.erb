@@ -1,0 +1,11 @@
+<% @title = "サインアップ" %>
+<%= render "common/header" %>
+
+<div class="container">
+  <h2 class="h2-responsive">新規投稿</h2>
+  <%= form_for @new_post do |f| %>
+    <div>テキスト</div>
+    <div><%= f.text_area :body %></div>
+    <%= f.submit "投稿" %>
+  <% end %>
+</div>

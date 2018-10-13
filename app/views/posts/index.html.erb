@@ -1,0 +1,8 @@
+<% @title = "サインアップ" %>
+<%= render "common/header" %>
+<div class="container">
+  <h2 class="h2-responsive">全ての投稿一覧</h2>
+  <% @posts.each do |p| %>
+    <%= render "common/post", post: p %>
+  <% end %>
+</div>

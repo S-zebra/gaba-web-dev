@@ -1,0 +1,14 @@
+<header class="shadow-sm">
+  <div class="container">
+    <h1 class="h1-responsive d-inline-block">
+      <%= link_to "NeoT**ter", :root %>
+    </h1>
+    <% if @account %>
+      (<%= @account.user_id %> さん)
+      <div class="text-right d-inline-block">
+
+          <%= link_to  "新規投稿", new_post_path %>
+      </div>
+    <% end %>
+  </div>
+</header>

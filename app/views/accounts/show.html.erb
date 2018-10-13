@@ -1,0 +1,14 @@
+<% @title = "投稿一覧" %>
+<%= render "common/header" %>
+<div class="container">
+  <h2 class="h2-responsive">あなたの投稿一覧</h2>
+  
+  <% if @posts && @posts.exists? %>
+    <span>投稿件数: <%= @posts.size %>件</span>
+    <% @posts.each do |post| %>
+      <%= render "common/post", post: post%>
+    <% end %>
+  <% else %>
+    投稿はありません。
+  <% end %>
+</div>
